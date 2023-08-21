@@ -3,17 +3,12 @@
 multiplicação sucessiva de n por 3 enquanto o produto for menor que 250. (n x 3; n x 3 x 3; n x 3 x 3 x 3 etc...).
 '''
 
-n = int(input("Coloque um número: "))
+n = int(input("Coloque um número menor ou igual a 50: "))
 
 while n > 50:
-    n = int(input("Coloque um OUTRO número: "))
+    n = int(input("Coloque um número MENOR OU IGUAL A 50: "))
 
-i = 0
-produto = i * 3
 
-while i <= n and produto < 250:
-    produto = i * 3
-    i += 1
-    print(produto)
-
-print(f"\nO produto de n vezes de três é igual a {produto}")
+while n < 250:
+    print(n)
+    n = n * 3
