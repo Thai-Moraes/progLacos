@@ -1,0 +1,20 @@
+"""
+Desenvolver um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de Fibonacci é
+formada pela sequência 1,1,2,3,5,8,13,21,34, ... etc. Ela se caracteriza pela soma de um termo posterior com seu
+anterior subsequente
+"""
+ultimo=1
+penultimo=1
+count=3
+
+print("Sequência de Fibonacci até o décimo quinto termo: 1, 1, ", end="")
+
+while count <= 15:
+    termo = ultimo + penultimo
+    penultimo = ultimo
+    ultimo = termo
+    count += 1
+    if count == 16:
+        print(f"{termo}. ", end="")
+    else:
+        print(f"{termo}, ", end="")
